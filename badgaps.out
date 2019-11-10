@@ -1,0 +1,20 @@
+=============================================================================
+G=   9130 P1=767*(787#)..(330D).. ERROR: Intermediate prime at P1 + 770
+G=   9184 P1=607*(809#)..(336D).. ERROR: Intermediate prime at P1 + 462
+G=   9212 P1=127*(809#)..(335D).. ERROR: Intermediate prime at P1 + 6426
+G=   9328 P1=671*(821#)..(341D).. ERROR: Intermediate prime at P1 + 178
+G=   9646 P1=655*(1229#..(519D).. ERROR: P1 composite (xMR2) Gtrue=0
+G=  10328 P1=447*(809#)..(335D).. ERROR: Intermediate prime at P1 + 470
+G=  11302 P1=859*(941#)..(395D).. ERROR: P1 composite (xMR2) Gtrue=0
+G=  12754 P1=177*(1201#..(506D).. ERROR: P2 composite (xMR2) Gtrue=12870
+G=  12910 P1=293*(1163#..(491D).. ERROR: P2 composite (26801|P2) Gtrue=14082
+G=  13316 P1=881*(1231#..(522D).. ERROR: Intermediate prime at P1 + 3866
+G=  13656 P1=655*(1229#..(519D).. ERROR: Intermediate prime at P1 + 770
+G=  14910 P1=69*(1237#)..(524D).. ERROR: Intermediate prime at P1 + 198
+G=    500 P1=2^4000 + 63          ERROR: P2 composite (3|P2) Gtrue=924
+G=    924 P1=2^4000 + 63                                            OK BPSW*1
+G=   1000 P1=2^4000 + 63          ERROR: Intermediate prime at P1 + 924
+=============================================================================
+ Errors=14.  OK=1.  T=17.331 seconds.
+ Input=badgaps.dat.  CL==>cglp4 badgaps.dat<==.
+=============================================================================

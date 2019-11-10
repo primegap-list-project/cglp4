@@ -1,0 +1,66 @@
+; sample.dat            Thomas R. Nicely          2015.09.08.2200
+;
+; Freeware copyright (c) 2014 Thomas R. Nicely <http://www.trnicely.net>.
+; Released into the public domain by the author, who disclaims any legal
+; liability arising from its use.
+;
+; This is a sample input file for the code cglp4.exe. Note that
+; gaps may be specified in either of two basic formats.
+;
+; The first few gaps are given in the standard format used in
+; Nicely's tables of first occurrence and first known occurrence
+; prime gaps at <http://www.trnicely.net>; see the documentation
+; in <http://www.trnicely.net/gaps/gaplist.html> for full details.
+;
+; The last few gaps are given in an abbreviated form, consisting of
+; two integers per line---the gap first, the initiating prime second,
+; separated by spaces.
+;
+; NOTES:
+;
+; (1) The command line invocation is
+;
+;     cglp4 sample.dat
+;
+;     where the executable and this data file are both presumed
+;     to be in the current directory. The output file cglp4.out
+;     will then also be created in the current directory (the
+;     output is also written to the screen).
+; (2) In the first format, spacing is critical; the gap size must
+;     appear in columns 1 through 6, and the initiating prime must
+;     begin in column 41.
+; (3) The first format allows for line continuation. Columns 41-240
+;     inclusive should contain the first 200 digits of the initiating
+;     prime, with a terminating backslash character (indicating line
+;     continuation). The continuation lines should be blank in columns
+;     1-40, with successive blocks of 200 digits in coumns 41-240. The
+;     terminating line must not end with a backslash.
+; (4) The second format does not presently allow for line continuation.
+; (5) The initiating primes may be specified by a BASIC/FORTRAN type
+;     formula.
+; (6) Integers must contain no grouping or separation symbols, such as
+;     embedded spaces, commas, underscores, or decimal points.
+; (7) See the lists and instructions at <http://www.trnicely.net>
+;     and <http://www.trnicely.net/gaps/gaplist.html> for
+;     additional documentation and examples.
+; (8) For discussion and a GNU C implementation of the Baillie-PSW
+;     primality test employed, see <http://www.trnicely.net/misc/bpsw.html>.
+
+   714  CFC Yng&Ptlr 1989  22.64    14  49639993268989
+  1296  C?C KOGrndln 2002  29.71    19  8822016561303449927
+  1998  C?C Andersen 2003  16.47    53  2^175 + 98306781845
+  8998  C?C NicelyHD 2002  15.92   246  30572004763112233476403682246768070122446705325442015369860623214334835004793215822361441917174932955117623007071665158976543030794081611987274294371307423797353904639224870243773605013890770173108642\
+                                        7287213628212317416906646366568155006808463121
+  2024  C?C H.Dubner 1999  22.15    40  4840766810958801623463585118756371445427
+  2110  C?C Be.Nyman 2003  21.57    43  3029113767179606590316585310535590441583681
+  1296  C?C Careless 2002  29.71    19  8822016561303449929
+  1294  C?C Careless 2002  29.71    19  8822016561303449927
+  1298  C?C Careless 2002  29.71    19  8822016561303449927
+  9226  C?C PierCami 2004  16.50   243  79*(593#)/6 - 5982
+   714  49639993268989
+  1296  8822016561303449927
+  6664  2^551 + 3544369001
+  1296  8822016561303449929
+  1294  8822016561303449927
+  1298  8822016561303449927
+ 20094  C?C Careless 2006  13.75   635  257*(1511#)/1314822 - 10468
