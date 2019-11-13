@@ -1,0 +1,12 @@
+Makefile.user
+Makefile
+
+*.bak
+*.rej
+*.orig
+*.o
+*.o-*
+*.patch
+*.a
+*.log
+
