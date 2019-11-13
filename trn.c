@@ -3192,7 +3192,7 @@ if(mpz_sgn(mpzU)==0)RETURN(1);
 if(mpz_sgn(mpzV)==0)RETURN(1);
 
 /* NOTE: Ribenboim ("The new book of prime number records," 3rd ed.,
-   1995/6) omits the condition Vð0 on p.142, but includes it on
+   1995/6) omits the condition Vp0 on p.142, but includes it on
    p. 130. The condition is NECESSARY; otherwise the test will
    return false negatives---e.g., the primes 29 and 2000029 will be
    returned as composite. */
@@ -3370,9 +3370,9 @@ while(1)
    M = 2^s*d (similar to the step for N - 1 in Miller's
    test). The extra strong Lucas-Selfridge test then returns N as
    an extra strong Lucas probable prime (eslprp) if any of the
-   following conditions is met: U_d=0 and V_dðñ2; or V_d=0; or
+   following conditions is met: U_d=0 and V_d?2; or V_d=0; or
    V_2d=0, V_4d=0, V_8d=0, V_16d=0, ..., etc., ending with
-   V_{2^(s-2)*d}=V_{M/4}ð0 (all equalities mod N). Thus d is the
+   V_{2^(s-2)*d}=V_{M/4}? (all equalities mod N). Thus d is the
    highest index of U that must be computed (since V_2m is
    independent of U), compared to U_M for the standard Lucas
    test; and no index of V beyond M/4 is required, compared to
@@ -3457,8 +3457,8 @@ for(ul=1; ul < uldbits; ul++)  /* zero bit on, already accounted for */
     }
   }
 
-/* N first passes the extra strong Lucas test if V_dð0, or if V_dðñ2
-   and U_dð0.  U and V are tested for divisibility by N, rather than
+/* N first passes the extra strong Lucas test if V_d?, or if V_d?2
+   and U_d?.  U and V are tested for divisibility by N, rather than
    zero, in case the previous FOR is a zero-iteration loop.*/
 
 if(mpz_divisible_p(mpzV, mpzN))RETURN(1);
