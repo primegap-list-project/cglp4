@@ -51,9 +51,11 @@
 
 #ifndef _TRN_H_  /* avoid duplication */
 
+/* Crudely commented out to enable trial compilation on Linux.
 #if defined(__linux__) && !defined(__i386__)
   #error ...Intel/AMD 386 compatible processor (with FPU) required...
 #endif
+*/
 
 #ifndef _GNU_SOURCE
   #define _GNU_SOURCE 1
